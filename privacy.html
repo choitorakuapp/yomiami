@@ -12,57 +12,80 @@
   .wrap { max-width:720px; margin:0 auto; padding:48px 20px 80px; }
   header { border-bottom:4px solid var(--accent); padding-bottom:20px; margin-bottom:40px; }
   h1 { font-size:26px; margin:0 0 6px; }
-  .date { color:var(--soft); margin:0; font-size:14px; }
-  h2 { font-size:18px; margin:36px 0 10px; padding-left:12px; border-left:4px solid var(--secondary); }
-  ul { padding-left:1.3em; }
+  .lead, .date { color:var(--soft); margin:0; }
+  .date { font-size:14px; }
+  h2 { font-size:18px; margin:38px 0 12px; padding-left:12px; border-left:4px solid var(--secondary); }
+  h3 { font-size:16px; margin:22px 0 6px; }
+  ul, ol { padding-left:1.4em; }
   li { margin-bottom:6px; }
+  dl { margin:0; }
+  dt { font-weight:700; margin-top:18px; }
+  dd { margin:4px 0 0; color:#333; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; vertical-align:top; padding:10px 8px; border-bottom:1px solid var(--line); }
+  th { width:32%; color:#333; font-weight:700; background:#FAFAFB; }
+  .price { border:1px solid var(--line); border-radius:12px; padding:14px 18px; }
+  .price p { margin:4px 0; }
+  .note { color:var(--soft); font-size:14px; }
   a { color:var(--secondary); }
   footer { margin-top:60px; padding-top:20px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; }
+  footer a { margin-right:16px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>プライバシーポリシー</h1>
-    <p class="date">ヨミアミ（以下「本アプリ」）／最終更新日：2026年9月22日</p>
+    <p class="date">ヨミアミ（以下「本アプリ」）／最終更新日：2026年10月9日</p>
   </header>
 
-  <h2>1. 収集する情報</h2>
-  <p>本アプリは、利用者の個人情報を収集しません。氏名、メールアドレス、位置情報、連絡先、利用状況の統計などを取得することはなく、開発者がその内容を知ることもできません。</p>
+  <p>ちょいとラクなアプリ（以下「開発者」）は、本アプリにおける利用者の情報の取り扱いについて、以下のとおり定めます。</p>
+
+  <h2>1. 開発者が取得する情報</h2>
+  <p>本アプリは、氏名、メールアドレス、電話番号、位置情報、連絡先などの個人情報を取得しません。広告の配信や、他のアプリ・ウェブサイトをまたいだ行動の追跡（トラッキング）も行いません。</p>
+  <p>ヨミアミProの購入・利用状況の管理に限り、次の情報を取り扱います（詳しくは「4. 購入情報の管理」）。</p>
+  <ul>
+    <li>アプリが自動で作成する匿名の利用者ID（氏名やApple IDとは結びつきません）</li>
+    <li>購入した商品、購入日・更新日、価格、ご利用中かどうかなどの購入履歴</li>
+    <li>端末の種類、OSのバージョン、本アプリのバージョンなど、購入の処理に必要な技術情報</li>
+  </ul>
 
   <h2>2. 利用者が入力した情報の保存場所</h2>
-  <p>本アプリに登録された書籍の情報、読書期間、感想・メモ、表紙画像、設定内容は、すべて利用者のiPhone内にのみ保存されます。開発者のサーバーへ送信されることはありません。</p>
+  <p>本アプリに登録された書籍の情報、読書期間、メモ、表紙画像、グラフの配置、設定内容は、すべて利用者のiPhone内に保存され、開発者のサーバーへ送信されることはありません。ホーム画面のウィジェットは、同じiPhone内でこれらの情報の一部（書名・著者名・表紙）を読み取って表示します。</p>
   <p>これらのデータは、iPhoneのバックアップ機能（iCloudバックアップまたはパソコンへのバックアップ）を有効にしている場合、そのバックアップに含まれます。バックアップの取り扱いは、Appleのプライバシーポリシーに従います。</p>
 
-  <h2>3. 外部サービスへの通信</h2>
-  <p>書籍情報を検索する機能を利用したときに限り、次のサービスへ通信を行います。送信されるのは、読み取りまたは入力されたISBN（書籍を識別する番号）のみです。</p>
+  <h2>3. 書籍情報の検索に伴う通信</h2>
+  <p>書籍を登録・検索する機能を利用したときに限り、次のサービスへ通信を行います。送信されるのは、読み取りまたは入力されたISBN（書籍を識別する番号）、検索のために入力された言葉、ランキングの取得に必要な条件のみで、利用者を特定する情報は含まれません。</p>
   <ul>
-    <li>楽天ウェブサービス（楽天ブックス書籍検索API）：書名・著者名・表紙画像の取得のため</li>
+    <li>楽天ウェブサービス（楽天ブックス書籍検索API・総合検索API）：書名・著者名・表紙画像・ランキングなどの取得のため</li>
     <li>国立国会図書館サーチ：ページ数などの書誌情報の取得のため</li>
   </ul>
   <p>取得した表紙画像はiPhone内に保存され、以後は通信せずに表示されます。</p>
 
-  <h2>4. カメラの利用</h2>
+  <h2>4. 購入情報の管理</h2>
+  <p>ヨミアミProの購入・更新・解約の確認には、RevenueCat, Inc.が提供するサービス「RevenueCat」を利用しています。「1. 開発者が取得する情報」に記載した購入に関する情報は、ご利用中のプランを正しく反映するためにRevenueCatへ送信され、同社のサーバーで管理されます。開発者は、購入の件数や売上の集計など、本アプリの運営に必要な範囲でのみこの情報を確認します。</p>
+  <p>代金のお支払いはApp Storeで行われ、クレジットカードなどの支払い情報を開発者やRevenueCatが受け取ることはありません。RevenueCatにおける情報の取り扱いは、<a href="https://www.revenuecat.com/privacy/">RevenueCatのプライバシーポリシー</a>をご覧ください。</p>
+
+  <h2>5. カメラの利用</h2>
   <p>本アプリは、書籍のバーコードを読み取る目的でのみカメラを使用します。読み取った映像が保存されたり、外部へ送信されたりすることはありません。カメラの利用許可は、iPhoneの「設定」からいつでも変更できます。</p>
 
-  <h2>5. 写真へのアクセス</h2>
+  <h2>6. 写真へのアクセス</h2>
   <p>表紙画像を登録する場合に限り、利用者が選択した写真を1枚ずつ読み込みます。写真ライブラリ全体を閲覧することはありません。</p>
 
-  <h2>6. 第三者への提供</h2>
-  <p>本アプリが利用者のデータを第三者へ提供・販売することはありません。また、広告の配信や行動追跡（トラッキング）は行いません。</p>
+  <h2>7. 第三者への提供</h2>
+  <p>開発者は、法令に基づく場合を除き、利用者の情報を第三者へ提供・販売することはありません。「3」「4」に記載したサービスへの送信は、各機能の提供に必要な範囲に限ります。</p>
 
-  <h2>7. データの削除</h2>
-  <p>本アプリをiPhoneから削除すると、保存されているデータもすべて削除されます。必要なデータは、事前に設定画面からバックアップを書き出してください。</p>
+  <h2>8. データの削除</h2>
+  <p>本アプリをiPhoneから削除すると、iPhone内に保存されているデータもすべて削除されます。必要なデータは、事前に設定画面からバックアップを書き出してください。RevenueCatで管理している購入情報の削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。</p>
 
-  <h2>8. 本ポリシーの変更</h2>
+  <h2>9. 本ポリシーの変更</h2>
   <p>本ポリシーの内容を変更する場合は、このページに掲載します。重要な変更がある場合は、アプリの更新情報でもお知らせします。</p>
 
-  <h2>9. お問い合わせ</h2>
-  <p>本ポリシーに関するご質問は、こちらまでご連絡ください。<br>
-  <a href="mailto:choirakuapp@gmail.com">choirakuapp@gmail.com</a></p>
+  <h2>10. お問い合わせ</h2>
+  <p>本ポリシーに関するご質問は、こちらまでご連絡ください。<br><a href="mailto:choirakuapp@gmail.com">choirakuapp@gmail.com</a></p>
 
   <footer>
-    <p><a href="index.html">ヨミアミについて</a></p>
+    <p><a href="index.html">ヨミアミについて</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシーポリシー</a><a href="tokushoho.html">特定商取引法に基づく表記</a></p>
     <p>© 2026 ちょいとラクなアプリ</p>
   </footer>
 </div>
