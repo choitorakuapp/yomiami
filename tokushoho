@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>特定商取引法に基づく表記 - ヨミアミ</title>
+<style>
+  :root { --ink:#1A1D21; --soft:#6B7280; --line:#E3E5E8; --accent:#FF9900; --secondary:#376EA4; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#fff; color:var(--ink); line-height:1.8;
+    font-family:-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 80px; }
+  header { border-bottom:4px solid var(--accent); padding-bottom:20px; margin-bottom:40px; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  .lead, .date { color:var(--soft); margin:0; }
+  .date { font-size:14px; }
+  h2 { font-size:18px; margin:38px 0 12px; padding-left:12px; border-left:4px solid var(--secondary); }
+  h3 { font-size:16px; margin:22px 0 6px; }
+  ul, ol { padding-left:1.4em; }
+  li { margin-bottom:6px; }
+  dl { margin:0; }
+  dt { font-weight:700; margin-top:18px; }
+  dd { margin:4px 0 0; color:#333; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; vertical-align:top; padding:10px 8px; border-bottom:1px solid var(--line); }
+  th { width:32%; color:#333; font-weight:700; background:#FAFAFB; }
+  .price { border:1px solid var(--line); border-radius:12px; padding:14px 18px; }
+  .price p { margin:4px 0; }
+  .note { color:var(--soft); font-size:14px; }
+  a { color:var(--secondary); }
+  footer { margin-top:60px; padding-top:20px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; }
+  footer a { margin-right:16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>特定商取引法に基づく表記</h1>
+    <p class="date">最終更新日：2026年10月9日</p>
+  </header>
+
+  <table>
+    <tr><th>販売事業者</th><td>ちょいとラクなアプリ</td></tr>
+    <tr><th>運営責任者</th><td>請求があった場合には、遅滞なく開示いたします。</td></tr>
+    <tr><th>所在地</th><td>請求があった場合には、遅滞なく開示いたします。</td></tr>
+    <tr><th>電話番号</th><td>請求があった場合には、遅滞なく開示いたします。<br>お問い合わせは、下記のメールアドレスにお願いいたします。</td></tr>
+    <tr><th>メールアドレス</th><td><a href="mailto:choirakuapp@gmail.com">choirakuapp@gmail.com</a></td></tr>
+    <tr><th>販売価格</th><td>ヨミアミPro<br>月額プラン：360円（税込）／1か月ごとの自動更新<br>年額プラン：3,600円（税込）／1年ごとの自動更新<br>買い切り：4,500円（税込）<br><span class="note">本アプリの購入画面およびApp Storeに表示される金額が優先されます。</span></td></tr>
+    <tr><th>商品代金以外の必要料金</th><td>本アプリのダウンロードや利用にかかるインターネット接続料金・通信料金は、お客様のご負担となります。</td></tr>
+    <tr><th>お支払い方法</th><td>App Storeでのお支払い（お客様のApple IDに登録された支払い方法）</td></tr>
+    <tr><th>お支払い時期</th><td>購入手続きの完了時にお支払いが確定します。月額プラン・年額プランは、以後、各期間の終了前24時間以内に次の期間の料金が自動で請求されます。</td></tr>
+    <tr><th>提供時期</th><td>購入手続きの完了後、すぐにご利用いただけます。</td></tr>
+    <tr><th>返品・キャンセル</th><td>デジタルコンテンツの性質上、購入後の返品・キャンセルはお受けしておりません。返金は、Appleの「<a href="https://reportaproblem.apple.com/">問題を報告する</a>」から申請でき、可否はAppleの定めに従います。</td></tr>
+    <tr><th>解約方法</th><td>iPhoneの「設定」→ お名前 →「サブスクリプション」から解約できます。解約後も、お支払い済みの期間の終わりまでご利用いただけます。</td></tr>
+    <tr><th>動作環境</th><td>iOS 17以降のiPhone</td></tr>
+  </table>
+
+  <footer>
+    <p><a href="index.html">ヨミアミについて</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシーポリシー</a><a href="tokushoho.html">特定商取引法に基づく表記</a></p>
+    <p>© 2026 ちょいとラクなアプリ</p>
+  </footer>
+</div>
+</body>
+</html>
