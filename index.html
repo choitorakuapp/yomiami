@@ -11,39 +11,61 @@
     font-family:-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
   .wrap { max-width:720px; margin:0 auto; padding:48px 20px 80px; }
   header { border-bottom:4px solid var(--accent); padding-bottom:20px; margin-bottom:40px; }
-  h1 { font-size:28px; margin:0 0 6px; }
-  .lead { color:var(--soft); margin:0; }
-  h2 { font-size:19px; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--secondary); }
-  ul { padding-left:1.3em; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  .lead, .date { color:var(--soft); margin:0; }
+  .date { font-size:14px; }
+  h2 { font-size:18px; margin:38px 0 12px; padding-left:12px; border-left:4px solid var(--secondary); }
+  h3 { font-size:16px; margin:22px 0 6px; }
+  ul, ol { padding-left:1.4em; }
   li { margin-bottom:6px; }
   dl { margin:0; }
   dt { font-weight:700; margin-top:18px; }
   dd { margin:4px 0 0; color:#333; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; vertical-align:top; padding:10px 8px; border-bottom:1px solid var(--line); }
+  th { width:32%; color:#333; font-weight:700; background:#FAFAFB; }
+  .price { border:1px solid var(--line); border-radius:12px; padding:14px 18px; }
+  .price p { margin:4px 0; }
+  .note { color:var(--soft); font-size:14px; }
   a { color:var(--secondary); }
   footer { margin-top:60px; padding-top:20px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; }
+  footer a { margin-right:16px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>ヨミアミ</h1>
-    <p class="lead">読んだ本を記録し、本どうしのつながりを見えるようにするiPhoneアプリ</p>
+    <p class="lead">読んだ本を記録し、本どうしのつながりを編み上げるiPhoneアプリ</p>
   </header>
 
   <h2>アプリについて</h2>
-  <p>ビジネス書をよく読む方に向けた読書記録アプリです。読んだ本の情報や感想を残すだけでなく、本どうしの関連や内包関係を図で表すことで、一冊一冊の立ち位置と、これまでの読書とのつながりを確かめられます。</p>
+  <p>ビジネス書をよく読む方に向けた読書記録アプリです。読んだ本の情報やメモを残すだけでなく、メモの中で本どうしをリンクしたり、テーマごとに集合としてまとめたりすることで、一冊一冊の立ち位置と、これまでの読書とのつながりを確かめられます。</p>
 
   <h2>主な機能</h2>
   <ul>
-    <li>バーコードまたはISBNからの書籍情報の自動登録</li>
-    <li>所持形態（現物所持・電子・借用）の記録</li>
-    <li>読書期間の記録（再読にも対応）と読了回数の表示</li>
-    <li>読んだページ数に応じた進捗の表示</li>
-    <li>本ごとの感想・メモ</li>
-    <li>ジャンル・グループによる分類と並び替え</li>
-    <li>本どうしの関連・内包を表す関係図</li>
+    <li>バーコードの読み取り、またはタイトル・著者名・ISBNでの検索による書籍の登録</li>
+    <li>今売れているビジネス書のランキングから、気になる本をそのまま登録</li>
+    <li>読書期間の記録（再読にも対応）と、読んだページ数に応じた進捗の表示</li>
+    <li>本ごとのメモ。メモの中にほかの本をリンクとして挿入でき、タップでその本のメモへ移動</li>
+    <li>メモのリンクから本どうしのつながりを線で表示し、テーマごとに集合（円）でまとめられるグラフ</li>
+    <li>ジャンル（色分け）・グループによる分類、並び替え、絞り込み</li>
+    <li>ホーム画面のウィジェットから、選んだ本のメモをすぐに開く（ヨミアミPro）</li>
     <li>バックアップの書き出しと復元</li>
   </ul>
+
+  <h2>ヨミアミPro</h2>
+  <p>無料のままでも、本の登録・メモ・グラフなどの基本機能はすべて使えます。ヨミアミProにすると、次の機能が解放されます。</p>
+  <ul>
+    <li>リンク・集合が無制限（無料版はリンク10本・集合3つまで）</li>
+    <li>メモをすぐに開けるウィジェット</li>
+  </ul>
+  <div class="price">
+    <p>月額プラン：360円（税込）／1か月ごとの自動更新</p>
+    <p>年額プラン：3,600円（税込）／1年ごとの自動更新</p>
+    <p>買い切り：4,500円（税込）／1回のお支払いのみ</p>
+  </div>
+  <p class="note">価格はApp Storeの日本の価格です。お支払いはApp Storeを通じて行われます。詳しくは<a href="terms.html">利用規約</a>と<a href="tokushoho.html">特定商取引法に基づく表記</a>をご覧ください。</p>
 
   <h2>よくある質問</h2>
   <dl>
@@ -51,21 +73,26 @@
     <dd>本の裏表紙にある2段のバーコードのうち、上段（978で始まる方）を枠内に写してください。明るい場所で、10〜15cmほど離すと読み取りやすくなります。カメラが起動しない場合は、iPhoneの「設定」→「ヨミアミ」からカメラへのアクセスを許可してください。</dd>
 
     <dt>表紙やページ数が登録されません</dt>
-    <dd>書籍データベースに情報がない場合があります。表紙は編集画面の「写真を選ぶ」から手動で登録でき、ページ数も手入力できます。</dd>
+    <dd>書籍データベースに情報がない場合があります。表紙は編集画面の「写真を選ぶ」から登録でき、ページ数も手入力できます。</dd>
 
     <dt>機種変更をしたいのですが</dt>
-    <dd>設定（⚙︎）の「データ」タブから「バックアップを書き出す」を選び、ファイルを保存してください。新しい端末で同じ画面から「バックアップから復元」を選ぶと、本の情報・感想・表紙がすべて引き継げます。</dd>
+    <dd>設定（⚙︎）の「データ」タブから「バックアップを書き出す」を選び、ファイルを保存してください。新しい端末で同じ画面から「バックアップから復元」を選ぶと、本の情報・メモ・表紙・グラフの配置が引き継げます。ヨミアミProは、新しい端末の設定画面で「購入を復元」を押すと引き継げます（購入時と同じApple IDでサインインしてください）。</dd>
+
+    <dt>ヨミアミProを解約したい</dt>
+    <dd>iPhoneの「設定」→ 画面上部のお名前 →「サブスクリプション」→「ヨミアミ」から解約できます。解約後も、期間の終わりまではProの機能を使えます。アプリを削除しただけでは解約されませんのでご注意ください。</dd>
+
+    <dt>解約後、作ったリンクや集合はどうなりますか</dt>
+    <dd>データはすべてそのまま残り、見ることも使うこともできます。無料版の上限（リンク10本・集合3つ）を超えている間は、新しく作ることだけができなくなります。</dd>
 
     <dt>データはどこに保存されますか</dt>
-    <dd>お使いのiPhoneの中だけに保存されます。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
+    <dd>お使いのiPhoneの中に保存され、開発者のサーバーへ送られることはありません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
   </dl>
 
   <h2>お問い合わせ</h2>
-  <p>ご質問・不具合のご報告は、こちらまでご連絡ください。<br>
-  <a href="mailto:choirakuapp@gmail.com">choirakuapp@gmail.com</a></p>
+  <p>ご質問・不具合のご報告は、こちらまでご連絡ください。<br><a href="mailto:choirakuapp@gmail.com">choirakuapp@gmail.com</a></p>
 
   <footer>
-    <p><a href="privacy.html">プライバシーポリシー</a></p>
+    <p><a href="index.html">ヨミアミについて</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシーポリシー</a><a href="tokushoho.html">特定商取引法に基づく表記</a></p>
     <p>© 2026 ちょいとラクなアプリ</p>
   </footer>
 </div>
